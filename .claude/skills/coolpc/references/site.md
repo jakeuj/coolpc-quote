@@ -1,7 +1,7 @@
 # 估價網頁 (GitHub Pages) 參考
 
 模板：`templates/index.html`、`templates/builder.css`、`templates/builder-ui.js`、`templates/coolpc-live.js`、`templates/site.json`、`templates/update-prices.yml`、`templates/worker/`；產生器：`scripts/build_site.py`。
-已上線範例：`jakeuj/architect-pc-builder` → `pc.jakeuj.com`（2026-10-06 起 `docs/CNAME`；舊網址 301 過去）（泛用的「原價屋估價單分享」，沒有 `game`；repo 名稱是早期為單一遊戲建的，為了不讓舊分享連結失效而保留）
+已上線範例：`jakeuj/coolpc-quote`（原名 `architect-pc-builder`）→ `https://jakeuj.com/coolpc-quote/`（泛用的「原價屋估價單分享」，沒有 `game`）。網頁 `https://jakeuj.com/coolpc-quote/`（2026-11-16 起不設 Pages 自訂網域，由使用者站網域 jakeuj.com 掛在 `/coolpc-quote/`；舊網址 `pc.jakeuj.com` 與 `blog.jakeuj.com/architect-pc-builder/` 由 Cloudflare 301 過來，分享連結 `#` 後面的估價單照樣帶著）。
 
 ## 專案結構 (repo 形式)
 
@@ -96,7 +96,7 @@ game_requirements.md 遊戲需求原文 (可選，遊戲專屬網站才需要)
 - 驗證 (`cleanStore` / `normBiz`，連結與設定表單共用)：先清控制、零寬、bidi 字元；店名必填 ≤ 30 且不可含「原價屋」/coolpc；電話只收數字、空白、`+-()#` 且至少 6 碼；LINE ID `^@?[a-z0-9._-]{3,20}$` (轉小寫)；長度超過就丟該欄 (不截斷)，壞欄位只丟該欄、品項照常還原。文字欄照收但畫面一律 `textContent`/`esc()`；`tel:`／LINE 連結只由 `CoolPC.telHref` / `lineHref` 產生 (個人 ID → `https://line.me/ti/p/~id`，`@` 官方帳號 → `https://line.me/R/ti/p/%40id`)，備註與地址不轉成連結。
 - 本店價失效：`p[1]` 是填價當下的 `totals().quoted`；之後只要原價屋合計不同 (換件、改數量、全部改用現價、清空、即時報價更新了跟著型錄的列) 就 `stale`，編輯區提示「保留本店價」，估價單標「本店價（需向店家確認）」。`bizTotals(quoted, biz)` 算本店合計 = (本店價，沒填用原價屋合計) + 服務列。
 - 歸屬 (`BuilderUI.owned` / `issuerFor`)：店家模式開著且已填店名，這張單沒有店家或店名正規化後相同 → 自己的單，可填店家報價，分享時抬頭用本機資料；別家店的單唯讀，「改用本店報價」清掉對方的 `issuer`/`biz`。沒動過的分享單只有在店家也沒換時才沿用原連結 (`pristine`)，所以店家打開客人的單直接轉傳，也會帶上自己的店家資訊。
-- 店家設定連結：`?openExternalBrowser=1#s=1<base64url(JSON 店家陣列)>` (`encodeStore`/`decodeStore`)，不帶業務姓名；`openExternalBrowser` 讓 LINE 改用外部瀏覽器開 (內建瀏覽器的 localStorage 是分開的)。打開時一律開設定對話框讓人確認、標出會取代的欄位，按儲存才寫入；`#store` 直接開設定 (推廣連結 `pc.jakeuj.com/#store`)。兩者都在同一頁處理，不重新載入。分享出去的網址用 `location.href.split(/[?#]/)[0]`，不把 query 帶給客人。
+- 店家設定連結：`?openExternalBrowser=1#s=1<base64url(JSON 店家陣列)>` (`encodeStore`/`decodeStore`)，不帶業務姓名；`openExternalBrowser` 讓 LINE 改用外部瀏覽器開 (內建瀏覽器的 localStorage 是分開的)。打開時一律開設定對話框讓人確認、標出會取代的欄位，按儲存才寫入；`#store` 直接開設定 (推廣連結 `jakeuj.com/coolpc-quote/#store`)。兩者都在同一頁處理，不重新載入。分享出去的網址用 `location.href.split(/[?#]/)[0]`，不把 query 帶給客人。
 - 舊版網頁 (Pages 快取約 10 分鐘) 打開店家單：照一般分享單顯示原價屋價格與 ▲▼、沒有店家抬頭，不報錯 (已用 HEAD 版 docs 實測)；打開 `#s=`/`#store` 會出現「舊版連結」toast。
 - 任何人都能捏造店家連結：估價單店家版頁尾固定寫「店家資訊與價格由製作者自行填寫，本網站未經查核」，並保留「由 <網域> 免費估價工具產生」。
 - 對照 (`CoolPC.reconcile`)，回傳 `{item, how, alts?}`：
@@ -175,7 +175,7 @@ game_requirements.md 遊戲需求原文 (可選，遊戲專屬網站才需要)
 
 ## 部署與 CI 的坑
 
-- `gh api repos/<owner>/<name>/pages` 回的 `html_url` / `cname` 就是實際網址：預設是使用者 Pages 的自訂網域路徑 (blog.jakeuj.com/<name>/)，repo 有 `docs/CNAME` 就是那個子網域 (本 repo 是 pc.jakeuj.com)，舊路徑與 github.io 都會 301 過去。換網域後 README、`promo.md`、`docs/index.html` 的 canonical / `og:url`、`worker/wrangler.toml` 的 `ALLOW_ORIGINS` 要跟著改 (改之前先問使用者)；舊網址 301 時瀏覽器會帶著 `#q=` 片段，舊分享連結不會壞。剛綁的子網域要等 GitHub 簽好憑證 (`https_certificate.state` 為 `approved`) 才有 https，並非網站壞了。
+- `gh api repos/<owner>/<name>/pages` 回的 `html_url` / `cname` 就是實際網址：jakeuj 的專案不設自訂網域，網址一律是使用者站網域的路徑 `https://jakeuj.com/<repo>/`（2026-11-16 起；舊子網域由 Cloudflare 301）。換網址後 README、`promo.md`、`docs/index.html` 的 canonical / `og:url`、`worker/wrangler.toml` 的 `ALLOW_ORIGINS`（填 origin `https://jakeuj.com`，不含路徑）要跟著改 (改之前先問使用者)；舊網址 301 時瀏覽器會帶著 `#q=` 片段，舊分享連結不會壞。
 - push 前先 `git fetch` 比對遠端：使用者網頁修改與報價 workflow 都可能推 commit。落後時保留本機未提交內容再整合；報價檔衝突以較新快照重跑 build_site.py。只提交本次範圍；技能正本 .agents 與網站是不同 repo，更新／同步技能本身不代表兩邊都要推送。
 - 推送後等待 Pages build／workflow 的 commit 等於本次 head 且成功，避免把前次 success 當成本次完成。再抓正式 HTML、其引用的 CSS／JS 與 data.json，確認 HTTP 成功、版本引用、canonical 與配置分類；瀏覽器等報價載完再確認 UI 和 console。部署可能需要數十秒或更久，區分推送、部署與正式載入三個結果。
 - workflow 每小時 :30 跑，`git add -A -- data docs quote.md` 後 `git diff --cached --quiet` 有變才提交 (`build_site.py` 內容沒變時沿用 `generated`)。別改回 `git diff --quiet -- <檔案>`：它看不到還沒追蹤的新檔 (例如第一次產生的 `data-more.json`)；`-A` 加目錄則容許 `all_categories: false` 時沒有這個檔。
@@ -206,7 +206,7 @@ game_requirements.md 遊戲需求原文 (可選，遊戲專屬網站才需要)
 
 ## 專案知識圖 (docs/graph/，本 repo 限定)
 
-graphify 從程式、文件與驗收截圖建的關係圖，給想看程式怎麼串起來的開發者，發布在 `pc.jakeuj.com/graph/`。頁面 `noindex`、估價網站沒有入口：買電腦的人用不到，也不該從搜尋進來。
+graphify 從程式、文件與驗收截圖建的關係圖，給想看程式怎麼串起來的開發者，發布在 `jakeuj.com/coolpc-quote/graph/`。頁面 `noindex`、估價網站沒有入口：買電腦的人用不到，也不該從搜尋進來。
 
 程式結構、文件或 SDD 驗收截圖有大改時才手動重建，不接每小時 workflow：重建要 LLM 讀文件與截圖 (2026-10-06 完整建一次約 74 萬 token，`--update` 只重抽變動檔)。
 

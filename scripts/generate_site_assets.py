@@ -57,7 +57,7 @@ def share_card(font_path):
     label(72, 365, "一條連結，保存報價與完整配置", 26, MUTED)
     box((72, 465, 350, 517), 26, "#102d35")
     label(96, 478, "含稅報價 · 免登入分享", 21, ACCENT)
-    label(72, 553, "pc.jakeuj.com", 23, MUTED)
+    label(72, 553, "jakeuj.com/coolpc-quote", 23, MUTED)
 
     box((806, 126, 1132, 514), 22, CARD, LINE, 2)
     label(832, 154, "BUILD SUMMARY", 21, ACCENT)

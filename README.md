@@ -5,9 +5,9 @@
 「複製分享連結」會把整張估價單（品名、當時價格、日期）存進網址，打開是一張唯讀的估價單（白色單據樣式，可以列印或存成 PDF），任何時候打開都看得到當初的報價，並標出每個零件跟原價屋現價比的漲跌（▲▼）、合計與已下架品項（搭板、裝機價等優惠結束但同型號還在賣的，會標「優惠已結束」並跟同型號現價比）。按「編輯這張估價單」就帶著同一份資料回到編輯畫面，可以改單再分享（上方會列出跟分享時的內容比換了哪幾格、各差多少、新增／移除與合計差）；「複製可編輯連結」打開直接是編輯畫面。▲▼ 是跟連結裡的當時價格比，不是原價屋自己的調價標示。每個零件旁另有「30 天最低／最高」與迷你折線（`docs/history.json`，從每小時快照整理的同型號價格變動，只記主機零件分類）。
 分享連結從 2026/10/22 起用 deflate 壓縮（格式字首 `2`，舊的 `1` 永遠能開；不支援 CompressionStream 的瀏覽器退回 `1`）；唯讀估價單右上角有這條連結的 QR Code（內建產生器，不用 CDN），列印也會帶著。分享或預覽過的估價單會記在這台裝置的「最近開過」（localStorage，最多 30 筆，可清除）。
 配好之後按「帶到原價屋估價頁」，會在新分頁開啟原價屋官方估價頁並預先選好同樣的品項與數量（以原價屋現價計），可以接著在那邊列印或聯絡原價屋。
-電腦店老闆或業務可以開「店家模式」（[pc.jakeuj.com/#store](https://pc.jakeuj.com/#store)）幫客人報價：估價單抬頭換成店名、業務、電話與 LINE（手機點了就能撥號／加好友），以原價屋報價為基準填一個本店價、加組裝費等服務、客戶稱呼、有效期限與備註，也能隱藏原價屋單價；店家資料只存在自己的瀏覽器，老闆設定一次可以用「店家設定連結」傳給同事。
+電腦店老闆或業務可以開「店家模式」（[jakeuj.com/coolpc-quote/#store](https://jakeuj.com/coolpc-quote/#store)）幫客人報價：估價單抬頭換成店名、業務、電話與 LINE（手機點了就能撥號／加好友），以原價屋報價為基準填一個本店價、加組裝費等服務、客戶稱呼、有效期限與備註，也能隱藏原價屋單價；店家資料只存在自己的瀏覽器，老闆設定一次可以用「店家設定連結」傳給同事。
 
-**網頁：https://pc.jakeuj.com/**（舊網址 `blog.jakeuj.com/architect-pc-builder/`、`jakeuj.github.io/architect-pc-builder/` 會 301 轉過去，舊分享連結 `#` 後面的估價單照樣帶著）
+**網頁：https://jakeuj.com/coolpc-quote/**（舊網址 `pc.jakeuj.com`、`blog.jakeuj.com/architect-pc-builder/` 會 301 轉過去，舊分享連結 `#` 後面的估價單照樣帶著）
 
 | | 文書 | 入門遊戲 | 主流遊戲 | 高階 |
 |---|---|---|---|---|
@@ -86,7 +86,7 @@ python3 -m http.server 8765 --directory docs                               # 本
 
 ## 專案知識圖
 
-[pc.jakeuj.com/graph/](https://pc.jakeuj.com/graph/) 是用 graphify 從本 repo 的程式、文件與驗收截圖產生的關係圖，給想看程式怎麼串起來的人參考；頁面設了 `noindex`，不會出現在搜尋結果，估價網站也沒有入口。
+[jakeuj.com/coolpc-quote/graph/](https://jakeuj.com/coolpc-quote/graph/) 是用 graphify 從本 repo 的程式、文件與驗收截圖產生的關係圖，給想看程式怎麼串起來的人參考；頁面設了 `noindex`，不會出現在搜尋結果，估價網站也沒有入口。
 它不跟每小時的報價流程更新（重建要用 LLM 讀文件與截圖）。程式或文件有大改時，在 Claude Code 跑 `/graphify . --update`，再執行 `python3 scripts/publish_graph.py`：把 `graphify-out/graph.html` 補上手機版面、`noindex` 與返回連結，寫到 `docs/graph/index.html`。
 
 ## 標籤說明

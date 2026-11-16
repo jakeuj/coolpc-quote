@@ -13,7 +13,7 @@ description: "抓取與解析原價屋含稅報價、搜尋零件、依需求配
 - 估價網頁的資料格式、分享連結、部署與已知坑：`references/site.md`；建立或改版介面時另讀 `references/site-ui.md`，模板在 `templates/`。
 - 原價屋網站的其他資料與入口 — 帶單開官方估價頁 (POST `iname` / GET `iBuy`)、廣告遮罩、頁內耗電瓦數／折抵／圖片陣列、每類總覽的圖片與規格列、更新時間檢查、不要串的頁面：`references/coolpc-pages.md`。
 - 可直接複製當模板的三套配置：`examples/low.json`、`mid.json`、`high.json`。
-- 本 repo（已上線）：泛用的「原價屋估價單分享」網站，沒有綁遊戲；GitHub `jakeuj/architect-pc-builder`，網頁 `pc.jakeuj.com`（2026-10-06 起 `docs/CNAME`；舊的 blog.jakeuj.com/architect-pc-builder/ 會 301 過去。repo 名稱沿用早期的遊戲專案，為了舊分享連結不改）；本機在 `/Users/jakeuj/claude/evaluate`。
+- 本 repo（已上線）：泛用的「原價屋估價單分享」網站，沒有綁遊戲；GitHub `jakeuj/coolpc-quote`（原名 `architect-pc-builder`，2026-11-16 改名），網頁 `https://jakeuj.com/coolpc-quote/`（2026-11-16 起不設 Pages 自訂網域，由使用者站網域 jakeuj.com 掛在 `/coolpc-quote/`；舊網址 `pc.jakeuj.com` 與 `blog.jakeuj.com/architect-pc-builder/` 由 Cloudflare 301 過來，分享連結 `#` 後面的估價單照樣帶著）。
 - 要在別的專案 / repo 用：在新專案根目錄跑 `python3 ~/.agents/skills/coolpc/scripts/build_site.py --init`，會把整個技能複製到新專案的 `.claude/skills/coolpc/` 並建骨架；專案副本供 CI 使用；一般抓價不會覆寫既有網頁，模板升級需明確同步。
 
 ## 1. 更新報價 (最常用)
@@ -112,12 +112,12 @@ python3 -m http.server 8765 --directory docs                    # 本機預覽 (
 - 主機零件格只放主機相關 11 個分類 (`DEFAULT_SLOTS`)，並剔除筆記型記憶體、散熱膏、線材等群組 (`EXCLUDE_GROUPS`)；要改欄位在 `site.json` 給 `slots`。其餘分類與被剔除的群組另存 `docs/data-more.json`，網頁切到「全部分類」才載入，可在「其他商品」加任意多件 (螢幕、週邊、第二顆 SSD…)，分享連結一併保存；遊戲專屬等純主機站在 `site.json` 設 `"all_categories": false` 關掉。細節見 `references/site.md`。
 - 分享按鈕給的是唯讀估價單 `#v=1&q=` (估價單樣式、可列印，右上角有這條連結的 QR Code，「編輯這張估價單」帶同一份資料回編輯模式)；「複製可編輯連結」給 `#q=`，打開直接編輯。`q` 存的是估價單快照 (每列 分類 + 品名 + 當時價格 + 日期)，字首是格式版本：`1` = base64url(JSON)，`2` = base64url(deflate-raw(JSON)) (2026-10-22 起預設；沒有 `CompressionStream` 的瀏覽器退回 `1`；兩種都能開，舊連結永遠有效；實測 8 列主機單 1,243 → 1,028 字元，中文品名難壓，其他商品多時省更多)。開啟時一定還原當初內容，並跟現行型錄 (即時或 data.json) 用品名對照；上方摘要逐列列出「分享時報價 → 現價」的 ▲▼、合計與已下架；搭板 / 裝機價等優惠結束但同型號還在賣的，標「…優惠已結束」並跟同型號原價比，不當成下架 (基準是連結裡的當時價格，跟原價屋品名裡的「▼下殺」、`價格異動` 無關，見 site.md)；可改單，沒改的列保留原報價、改過的用現價，改過後另列「這張單跟分享時的內容（日期）有什麼不同」的逐格差異與合計差，「還原分享時的內容」復原，「全部改用現價」一鍵重報。分享或預覽過的單會記進這台裝置的「最近開過」。要把現成估價單 (原價屋截圖、清單) 做成連結，照 `references/site.md`「從現成估價單產生連結」做；`encodeQuote`／`decodeQuote` 現在是 async，Node 一行指令要包在 async 函式裡 `await` (`deflate-raw` 要 Node 20.12 以上，CI 用 Node 22；更舊的 Node 編碼會退回 `1`)。
 - 零件下架 (build 的 `match` 對不到或命中多筆) 時，`quote.py` 標「已下架」不計價、`build_site.py` 沿用上一版 `docs/data.json` 對到的品名與價格並標 `gone`，網頁顯示「已下架」讓人改選；都不會讓排程失敗。只有上一版也沒有 (新寫的 build 打錯) 才會報錯。下架後記得找替代品更新 `builds/*.json`。
-- 部署：`gh repo create <name> --public --source . --push`，再 `gh api -X POST repos/<owner>/<name>/pages -f build_type=legacy -f 'source[branch]=main' -f 'source[path]=/docs'`。使用者的 Pages 綁了自訂網域，實際網址預設是 `https://blog.jakeuj.com/<name>/`（`jakeuj.github.io/<name>/` 會 301 過去）；repo 有 `docs/CNAME` 時以它為準。README 要寫實際網址。push 前先 fetch (見 site.md「部署與 CI 的坑」)。
+- 部署：`gh repo create <name> --public --source . --push`，再 `gh api -X POST repos/<owner>/<name>/pages -f build_type=legacy -f 'source[branch]=main' -f 'source[path]=/docs'`。使用者站的自訂網域是 `jakeuj.com`，實際網址是 `https://jakeuj.com/<name>/`（`jakeuj.github.io/<name>/` 會 301 過去）；不要加 `docs/CNAME` 開子網域，資源一律用相對路徑。新站要加進 jakeuj.github.io repo 的 `portal/sites.json`，入口首頁才會列出。README 要寫實際網址。push 前先 fetch (見 site.md「部署與 CI 的坑」)。
 - workflow 每小時 :30 抓價、只在 `data/`、`quote.md` 或 `docs/` 資料真的變動時 commit（先 `git add -A` 再比 staged；`build_site.py` 在內容沒變時沿用上次的 `generated`，`docs/history.json` 則只在價格變動時追加、key 排序、不放時間戳，內容沒變時逐位元相同，不會多出 diff）。GitHub 的 runner 抓得到 coolpc，已驗證。public repo 不耗 Actions 額度；排程常延後數小時或跳過 (見 site.md「部署與 CI 的坑」)。
 - 即時報價 (可選)：原價屋沒有 CORS，網頁要透過 `worker/` (Cloudflare Worker) 代理抓現頁；`docs/coolpc-live.js` 是 `parse_coolpc.py` 的 JS 版，在瀏覽器解析。`site.json` 的 `live_url` 留空就只用 workflow 的快照。**本 repo 目前停用** (2026-10-02 起 `live_url` = `""`)：worker 程式寫好了但沒部署，`coolpc.jakeuj.com` 沒有 DNS 紀錄；使用者目前不要即時查價，價格只靠 workflow。要開的順序是先部署、curl 驗證，再把網址填回 `live_url` 跑 `build_site.py`；別在沒部署前填網址，也別主動叫使用者部署。部署與坑見 `references/site.md`。
 - `.gitignore` 排除 `evaluate*.php`（1MB+ 原始 HTML）與 `.claude/launch.json`、`.claude/settings.local.json`；`.claude/skills/` 要進版控。
 - 新站設定好 title／subtitle／repo 後，同步初始 HTML 的標題與描述；公開網址確認後再填 canonical 與 `og:url`，避免沿用範例網站的網域。資料生成器只更新 `docs/data.json`、`docs/data-more.json` 與 `docs/history.json` (價格歷史，2026-10-22 起)，不改 metadata 或介面檔案。
-- 知識圖 (本 repo 限定)：`docs/graph/` 是 graphify 產生的開發者關係圖 (`pc.jakeuj.com/graph/`，`noindex`，估價網站不連過去)，不跟每小時排程。重建、發布或改 `scripts/publish_graph.py` 前讀 site.md「專案知識圖」。
+- 知識圖 (本 repo 限定)：`docs/graph/` 是 graphify 產生的開發者關係圖 (`jakeuj.com/coolpc-quote/graph/`，`noindex`，估價網站不連過去)，不跟每小時排程。重建、發布或改 `scripts/publish_graph.py` 前讀 site.md「專案知識圖」。
 - 細節與坑見 `references/site.md`。
 
 ## 7. 維護

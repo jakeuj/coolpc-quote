@@ -1,4 +1,4 @@
-# 接續 prompt：原價屋估價單分享（pc.jakeuj.com）待優化項目（2026-10-22 審查後）
+# 接續 prompt：原價屋估價單分享（jakeuj.com/coolpc-quote）待優化項目（2026-10-22 審查後）
 
 接續「原價屋估價單分享」的功能開發。上一輪已推上 main：改單差異比較（4b8992c）、零件價格歷史 docs/history.json 與迷你折線（4bedb4c）、分享連結 deflate 壓縮版本 2 ＋ 唯讀估價單 QR Code ＋ 最近開過（235876e）。之後用 54 個 agent 從正確性、安全、資料流、UX／列印、規格落差、效能六個視角審這三個 commit，逐條對抗驗證，確認 23 條問題。這一輪依序修下面七項，每項各自一個 commit，做完一項就 commit 並 push 再做下一項。
 

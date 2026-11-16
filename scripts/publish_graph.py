@@ -3,7 +3,7 @@
 
 用法: python3 scripts/publish_graph.py [--src FILE] [--out FILE]
   --src FILE  graphify 輸出 (預設: graphify-out/graph.html; 先在 Claude Code 跑 /graphify . --update)
-  --out FILE  發布位置 (預設: docs/graph/index.html, 即 https://pc.jakeuj.com/graph/)
+  --out FILE  發布位置 (預設: docs/graph/index.html, 即 https://jakeuj.com/coolpc-quote/graph/)
 
 graphify 的頁面是給本機看的: 沒有 viewport、標題是檔案路徑。這裡補上手機版面、繁中標題、
 返回估價網站的連結, 並加 noindex —— 這頁是給開發者看的, 不該出現在買電腦的人的搜尋結果裡。
