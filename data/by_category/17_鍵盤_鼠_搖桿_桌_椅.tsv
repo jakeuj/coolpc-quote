@@ -1,4 +1,4 @@
-# 17 鍵盤+鼠｜搖桿｜桌+椅  (報價日期 2026/11/17 10:04)
+# 17 鍵盤+鼠｜搖桿｜桌+椅  (報價日期 2026/11/17 19:00)
 # price	id	flags	name
 
 ## 【周邊活動熱賣專區】
@@ -239,8 +239,8 @@
 1990	257	熱賣	｛Keychron V5 Max｝QMK 無線機械式鍵盤(白色)/2.4g/藍牙/紅軸/中文/96%/熱插拔/Rgb
 1990	259	熱賣	｛Keychron V5 Max｝QMK 無線機械式鍵盤(白色)/2.4g/藍牙/茶軸/中文/96%/熱插拔/Rgb
 1990	261	熱賣	｛Keychron V5 Max｝QMK 無線機械式鍵盤(白色)/2.4g/藍牙/香蕉軸/中文/96%/熱插拔/Rgb
-3490	263		｛Keychron K5 Max｝QMK 無線機械式鍵盤/有線/2.4g/藍牙/矮軸(紅)/中文/白色背光
-3490	264		｛Keychron K5 Max｝QMK 無線機械式鍵盤/有線/2.4g/藍牙/矮軸(茶)/中文/白色背光
+2990(原3490)	263	價格異動 下殺	｛Keychron K5 Max｝QMK 無線機械式鍵盤/有線/2.4g/藍牙/矮軸(紅)/中文/白色背光
+2990(原3490)	264	價格異動 下殺	｛Keychron K5 Max｝QMK 無線機械式鍵盤/有線/2.4g/藍牙/矮軸(茶)/中文/白色背光
 3490	265	熱賣	｛Keychron K10 Max｝QMK 無線機械式鍵盤(黑色)/有線/2.4g/藍牙/紅軸/中文/熱插拔/Rgb
 3490	266	熱賣	｛Keychron K10 Max｝QMK 無線機械式鍵盤(黑色)/有線/2.4g/藍牙/茶軸/中文/熱插拔/Rgb
 3990	267		｛Keychron K10 Ultra｝三模機械式鍵盤(黑)/有線/無線/藍牙/紅軸/中文/8KHz/熱插拔
@@ -720,16 +720,16 @@
 5288	786	熱賣	｛Razer Raiju V3 Pro｝無線搖桿(白)/對稱拇指搖桿/多功能按鍵/8向懸浮方向鍵/附攜帶盒
 2380	787	熱賣	｛SONY DualSense｝無線控制器(午夜黑)/藍牙+Type-c連接線/觸覺回饋/自適應扳機
 590	788	熱賣	(主機搭購優惠)Turtle Beach Rematch Core 系列手把 原價$990
-649(原749)	789	價格異動 下殺	｛Turtle Beach Rematch Core｝有線搖桿 黑綠/專利音訊控制/人體工學/雙震動馬達▼下殺到 11/30 23:59
-649(原749)	790	價格異動 下殺	｛Turtle Beach Rematch Core｝有線搖桿 白綠/專利音訊控制/人體工學/雙震動馬達▼下殺到 11/30 23:59
-699(原799)	791	價格異動 下殺	｛Turtle Beach Rematch Core｝有線搖桿 迷彩黑綠/專利音訊控制/人體工學/雙震動馬達▼下殺到 11/30 23:59
-699(原799)	792	價格異動 下殺	｛Turtle Beach Rematch Core 有線搖桿 迷彩黑橘/專利音訊控制/人體工學/雙震動馬達▼下殺到 11/30 23:59
-1111(原1290)	793	熱賣 價格異動 下殺	｛Turtle Beach Rematch Advanced｝有線搖桿 黑暗宇宙/專利音訊控制/可自訂遊戲操作▼下殺到 11/30 23:59
-1111(原1290)	794	熱賣 價格異動 下殺	｛Turtle Beach Rematch Advanced｝有線搖桿 京都之花/專利音訊控制/可自訂遊戲操作▼下殺到 11/30 23:59
-1111(原1290)	795	熱賣 價格異動 下殺	｛Turtle Beach Afterglow Ignite｝有線搖桿 時光機/專利音訊控制/雙段霍爾效應板機/Rgb▼下殺到 11/30 23:59
-1111(原1290)	796	熱賣 價格異動 下殺	｛Turtle Beach Afterglow Wave｝有線搖桿 黑色/專利音訊控制/霍爾效應三段可調式扳機/Rgb▼下殺到 11/30 23:59
-1111(原1290)	797	熱賣 價格異動 下殺	｛Turtle Beach Afterglow Wave｝有線搖桿 白色/專利音訊控制/霍爾效應三段可調式扳機/Rgb▼下殺到 11/30 23:59
-1111(原1290)	798	熱賣 價格異動 下殺	｛Turtle Beach Afterglow Wave｝有線搖桿 藍色/專利音訊控制/霍爾效應三段可調式扳機/Rgb▼下殺到 11/30 23:59
+749	789		｛Turtle Beach Rematch Core｝有線搖桿 黑綠/專利音訊控制/人體工學/雙震動馬達
+749	790		｛Turtle Beach Rematch Core｝有線搖桿 白綠/專利音訊控制/人體工學/雙震動馬達
+799	791		｛Turtle Beach Rematch Core｝有線搖桿 迷彩黑綠/專利音訊控制/人體工學/雙震動馬達
+799	792		｛Turtle Beach Rematch Core 有線搖桿 迷彩黑橘/專利音訊控制/人體工學/雙震動馬達
+1290	793	熱賣	｛Turtle Beach Rematch Advanced｝有線搖桿 黑暗宇宙/專利音訊控制/可自訂遊戲操作
+1290	794	熱賣	｛Turtle Beach Rematch Advanced｝有線搖桿 京都之花/專利音訊控制/可自訂遊戲操作
+1290	795	熱賣	｛Turtle Beach Afterglow Ignite｝有線搖桿 時光機/專利音訊控制/雙段霍爾效應板機/Rgb
+1290	796	熱賣	｛Turtle Beach Afterglow Wave｝有線搖桿 黑色/專利音訊控制/霍爾效應三段可調式扳機/Rgb
+1290	797	熱賣	｛Turtle Beach Afterglow Wave｝有線搖桿 白色/專利音訊控制/霍爾效應三段可調式扳機/Rgb
+1290	798	熱賣	｛Turtle Beach Afterglow Wave｝有線搖桿 藍色/專利音訊控制/霍爾效應三段可調式扳機/Rgb
 1990	799		｛MSI Force Gc300 W｝無線搖捍控制器遊戲手把(黑)/有線-無線-藍牙/動態觸覺回饋
 1990	800		｛MSI Force Gc300 W｝無線搖捍控制器遊戲手把(白)/有線-無線-藍牙/動態觸覺回饋
 679	801		｛羅技 F310｝遊戲搖桿/有線/浮動式D-Pad舒適防滑握把
