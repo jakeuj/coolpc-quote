@@ -1,4 +1,4 @@
-# 02 筆電｜平板｜穿戴配件  (報價日期 2026/11/26 18:51)
+# 02 筆電｜平板｜穿戴配件  (報價日期 2026/11/27 16:09)
 # price	id	flags	name
 
 ## PAD 智慧平板
@@ -43,41 +43,41 @@
 ## 華碩 筆電區
 31900	36		【展示品】華碩 Vivobook Ultra 5-226V/16G/512G/14吋 玫瑰金 S5406SA 省$3000
 58999	37		【展示品】華碩 Zenbook Ultra 7-258V/32G/1T/16吋 暖煦白｛UX5606SA｝省$1000
-65900	38		【展示品】華碩 TUF Ryzen AI 9 465/RTX5060/32G/1T/14吋 銀 FA401GM 省$3000
 
 ## NVIDIA RTX Spark N1X
-269999	42		華碩 ProArt NVIDIA N1X/128G/2T/16吋 曜夜黑｛H7607BA-8888KN1X20｝觸控
-269999	43		華碩 ProArt NVIDIA N1X/128G/2T/16吋 皓月銀｛H7607BA-6666WN1X20｝觸控
-249999	44		華碩 ProArt NVIDIA N1X/128G/1T/14吋 曜夜黑｛H7407BA-1288KN1X20｝觸控
-249999	45		華碩 ProArt NVIDIA N1X/128G/1T/14吋 皓月銀｛H7407BA-1688WN1X20｝觸控
-269900	46		微星 Prestige N16 Flip AI+ Spark N1X/128G/2T/16吋/灰｛C1XMT-209TWY｝【翻轉觸控】
-159990	47		Lenovo Yoga Pro 9 Spark N1X/64G/1T/15.3吋/雷霆灰｛83SR0039TW｝〈觸控〉
+269999	41		華碩 ProArt NVIDIA N1X/128G/2T/16吋 曜夜黑｛H7607BA-8888KN1X20｝觸控
+269999	42		華碩 ProArt NVIDIA N1X/128G/2T/16吋 皓月銀｛H7607BA-6666WN1X20｝觸控
+249999	43		華碩 ProArt NVIDIA N1X/128G/1T/14吋 曜夜黑｛H7407BA-1288KN1X20｝觸控
+249999	44		華碩 ProArt NVIDIA N1X/128G/1T/14吋 皓月銀｛H7407BA-1688WN1X20｝觸控
+269900	45		微星 Prestige N16 Flip AI+ Spark N1X/128G/2T/16吋/灰｛C1XMT-209TWY｝【翻轉觸控】
+159990	46		Lenovo Yoga Pro 9 Spark N1X/64G/1T/15.3吋/雷霆灰｛83SR0039TW｝〈觸控〉
 
 ## 宏碁 Acer 筆電館-全館刷卡分期零利率(3)
-3000	50		ACER 原廠一年延長保固卡 (Predator & ConceptD系列機種不適用 )
-2190	51		Acer 原廠 140W 氮化鎵USB電源充電器/白色 (COT-966)
-490	52		Acer AMR100 滑鼠(黑)/無線/1600dpi
+3000	49		ACER 原廠一年延長保固卡 (Predator & ConceptD系列機種不適用 )
+2190	50		Acer 原廠 140W 氮化鎵USB電源充電器/白色 (COT-966)
+490	51		Acer AMR100 滑鼠(黑)/無線/1600dpi
 
 ## 15吋 Acer宏碁 Aspire 7 系列
-32688	54		Acer Aspire 7 Core 5-210H/RTX3050/16G/512G/15.6吋/黑｛A715-59G-55LN｝
-37811(原38900)	55	價格異動 下殺	Acer Aspire 7 Core 5-210H/RTX4050/16G/512G/15.6吋/黑｛A715-59G-565X｝
+32688	53		Acer Aspire 7 Core 5-210H/RTX3050/16G/512G/15.6吋/黑｛A715-59G-55LN｝
+37811(原38900)	54	價格異動 下殺	Acer Aspire 7 Core 5-210H/RTX4050/16G/512G/15.6吋/黑｛A715-59G-565X｝
 
 ## 14吋 Acer宏碁 Aspire Lite 系列
-21900	57		Acer Aspire Lite Core 5-210H/8G/512G/14吋/銀｛AL14-72P-59YA｝
-25900	58		Acer Aspire Lite Ultra 5-115U/16G/512G/14吋/白｛AL14-53P-52QJ｝
+21900	56		Acer Aspire Lite Core 5-210H/8G/512G/14吋/銀｛AL14-72P-59YA｝
+25900	57		Acer Aspire Lite Ultra 5-115U/16G/512G/14吋/白｛AL14-53P-52QJ｝
 
 ## 15吋 Acer宏碁 Aspire Lite 系列
-21900	60		Acer Aspire Lite R7-7730U/8G/512G/15.6吋/白｛AL15-49P-R1J4｝
-23999(原27900)	61	價格異動 下殺	Acer Aspire Lite Core 7-150U/16G/512G/15.6吋/銀｛AL15-53P-706M｝
-24900	62		Acer Aspire Lite Ultra 5-125H/16G/512G/15.6吋/銀｛AL15-74P-51ZG｝
-31900(原33900)	63	價格異動 下殺	Acer Aspire Lite Ultra 5-125H/32G/512G/15.6吋/銀｛AL15-74P-589G｝
-26900(原27900)	64	價格異動 下殺	Acer Aspire Lite Ultra 5-125H/16G/512G/15.6吋/銀｛AL15-74T-51XV｝〈觸控〉
-30888	65		Acer Aspire Lite Ultra 7-155H/16G/512G/15.6吋/銀｛AL15-74P-712A｝
-28900	66		Acer Aspire Lite Core 5-210H/16G/512G/15.6吋/藍｛AL15-73P-56AE｝
-29900	67		Acer Aspire Lite Ultra 5-226V/16G/512G/15.6吋/銀｛AL15-57P-50AK｝
+21900	59		Acer Aspire Lite R7-7730U/8G/512G/15.6吋/白｛AL15-49P-R1J4｝
+23999(原27900)	60	價格異動 下殺	Acer Aspire Lite Core 7-150U/16G/512G/15.6吋/銀｛AL15-53P-706M｝
+24900	61		Acer Aspire Lite Ultra 5-125H/16G/512G/15.6吋/銀｛AL15-74P-51ZG｝
+31900(原33900)	62	價格異動 下殺	Acer Aspire Lite Ultra 5-125H/32G/512G/15.6吋/銀｛AL15-74P-589G｝
+26900(原27900)	63	價格異動 下殺	Acer Aspire Lite Ultra 5-125H/16G/512G/15.6吋/銀｛AL15-74T-51XV｝〈觸控〉
+30888	64		Acer Aspire Lite Ultra 7-155H/16G/512G/15.6吋/銀｛AL15-74P-712A｝
+28900	65		Acer Aspire Lite Core 5-210H/16G/512G/15.6吋/藍｛AL15-73P-56AE｝
+29900	66		Acer Aspire Lite Ultra 5-226V/16G/512G/15.6吋/銀｛AL15-57P-50AK｝
 
 ## 16吋 Acer宏碁 Aspire Lite 系列
-25900	69		Acer Aspire Lite Ultra 5-115U/16G/512G/16吋/銀｛AM16-53P-53HR｝
+25900	68		Acer Aspire Lite Ultra 5-115U/16G/512G/16吋/銀｛AM16-53P-53HR｝
+25900	69		Acer Aspire Lite Ultra 5-125H/16G/512G/16吋/銀｛AL16-74P-5985｝
 28900	70		Acer Aspire Lite Ultra 5-125H/16G/512G/16吋/銀｛AL16-74T-56K4｝〈觸控〉
 30888	71		Acer Aspire Lite Ultra 7-155H/16G/512G/16吋/銀｛AL16-74P-70L5｝
 35300(原35900)	72	價格異動 下殺	Acer Aspire Lite Ultra 7-155H/16G/512G/16吋/銀｛AL16-71P-74AH｝
@@ -482,78 +482,78 @@
 ## HP惠普 家用筆電館-全館刷卡分期零利率(3)
 
 ## 14 吋 HP OmniBook 3
-39900	450		HP OmniBook 3 U5-325/16G/512G/14吋 冰川銀｛14-hs0018TU｝
+39900	451		HP OmniBook 3 U5-325/16G/512G/14吋 冰川銀｛14-hs0018TU｝
 
 ## 16 吋 HP OmniBook 3
-34900	452		HP OmniBook 3 C5-120U/16G/512G/16吋 冰川銀｛16-bu0029TU｝
+34900	454		HP OmniBook 3 C5-120U/16G/512G/16吋 冰川銀｛16-bu0029TU｝
 
 ## 17 吋 HP OmniBook 3
-31900(原36900)	454	價格異動 下殺	HP OmniBook 3 AI C5-315/16G/512G/17吋 冰川銀｛17-dg0005TU｝
+31900(原36900)	457	價格異動 下殺	HP OmniBook 3 AI C5-315/16G/512G/17吋 冰川銀｛17-dg0005TU｝
 
 ## 14 吋 HP OmniBook 5 Flip 翻轉觸控筆電
-32900	456	熱賣	HP OmniBook 5 Flip C5-120U/16G/512G/14吋/翻轉觸控 閨蜜粉｛14-fp0043TU｝
-32900	457	熱賣	HP OmniBook 5 Flip C5-120U/16G/512G/14吋/翻轉觸控 冰川銀｛14-fp0044TU｝
-39999	458		HP OmniBook 5 Flip U5-322/16G/512G/14吋/翻轉觸控 閨蜜粉｛14-km0047TU｝
+32900	460	熱賣	HP OmniBook 5 Flip C5-120U/16G/512G/14吋/翻轉觸控 閨蜜粉｛14-fp0043TU｝
+32900	461	熱賣	HP OmniBook 5 Flip C5-120U/16G/512G/14吋/翻轉觸控 冰川銀｛14-fp0044TU｝
+39999	462		HP OmniBook 5 Flip U5-322/16G/512G/14吋/翻轉觸控 閨蜜粉｛14-km0047TU｝
 
 ## 14 吋 HP OmniBook X FlipNGAI 翻轉觸控系列
-54900	460		HP OmniBook X FlipNGAI U5-325/16G/1T/14吋/翻轉觸控 職人灰｛14-kb0077TU｝
+54900	465		HP OmniBook X FlipNGAI U5-325/16G/1T/14吋/翻轉觸控 職人灰｛14-kb0077TU｝
 
 ## 14 吋 HP OmniBook UltraNGAI 觸控系列
-74900	462		HP OmniBook Ultra AI U7-356H/32G/1T/14吋/觸控螢幕 流星金｛14-kd0024TU｝
+74900	468		HP OmniBook Ultra AI U7-356H/32G/1T/14吋/觸控螢幕 流星金｛14-kd0024TU｝
 
 ## 15吋 HP HyperX OMEN 潮競系列 /Victus 光影系列
-37999	464		HP Victus Gaming i5-14450HX/RTX3050/16G/512G/15.6吋 黑｛15-fa2312TX｝
-61111(原61888)	465	價格異動 下殺	HP HyperX OMEN i7-14650HX/RTX5060/16G/1T/15.3吋 究極黑｛15-ga0008TX｝
-72900	466		HP HyperX OMEN i7-14650HX/RTX5060/16G/1T/15.3吋 究極黑｛15-ga0006TX｝
-79900	467		HP HyperX OMEN U9-386H/RTX5070/16G/1T/15.3吋 究極黑｛15-ga0166TX｝
+37999	470		HP Victus Gaming i5-14450HX/RTX3050/16G/512G/15.6吋 黑｛15-fa2312TX｝
+61111(原61888)	471	價格異動 下殺	HP HyperX OMEN i7-14650HX/RTX5060/16G/1T/15.3吋 究極黑｛15-ga0008TX｝
+72900	472		HP HyperX OMEN i7-14650HX/RTX5060/16G/1T/15.3吋 究極黑｛15-ga0006TX｝
+79900	474		HP HyperX OMEN U9-386H/RTX5070/16G/1T/15.3吋 究極黑｛15-ga0166TX｝
 
 ## 16吋 HP HyperX OMEN 潮競系列
-79900	469		HP HyperX OMEN Ryzen AI 7 450/RTX5070/16G/1T/16吋 究極黑｛16-ap1051AX｝
-83900	470		HP HyperX OMEN i9-14900HX/RTX5070/16G/1T/16吋 究極黑｛16-am2090TX｝
+79900	477		HP HyperX OMEN Ryzen AI 7 450/RTX5070/16G/1T/16吋 究極黑｛16-ap1051AX｝
+83900	479		HP HyperX OMEN i9-14900HX/RTX5070/16G/1T/16吋 究極黑｛16-am2090TX｝
 
 ## HP惠普 工作站 筆電館-全館刷卡分期零利率(3)
 
 ## 14 吋 HP惠普 ZBook Firefly 14 系列〈創意行動達人〉
-35900	474		HP ZBook Firefly G11A /R7-PRO 8840HS/8G/512G/14吋 灰｛A8NM6PT｝
-36899	475		【升級延保加價購】HP ZBook Firefly G11A 升級3年保
+35900	484		HP ZBook Firefly G11A /R7-PRO 8840HS/8G/512G/14吋 灰｛A8NM6PT｝
+36899	485		【升級延保加價購】HP ZBook Firefly G11A 升級3年保
 
 ## 16 吋 HP惠普 ZBook 8 G1i/G1a 14 系列
-57900	478		HP ZBook 8 G1i 16 特仕版 /Ultra 7-255U/16G+16G/512G/16吋 灰｛BR7K6PT｝~限量再送延保
+57900	488		HP ZBook 8 G1i 16 特仕版 /Ultra 7-255U/16G+16G/512G/16吋 灰｛BR7K6PT｝~限量再送延保
 
 ## 筆電周邊
-390	481		3C Pig 第二顆硬碟托架轉接盒+ USB 筆電光碟機(12.7mm)外接盒
+390	491		3C Pig 第二顆硬碟托架轉接盒+ USB 筆電光碟機(12.7mm)外接盒
 
 ## 快速充電器
-3390	483		｛ASUS ROG AC140-01｝140W GaN四孔充電器 1A3C + C to C 充電線
-2190	484		Acer 原廠 140W 氮化鎵USB電源充電器/白色 (COT-966)
-299	485		台達 45W 筆電變壓器(ADP-45VD BB) / 基本5種筆電接頭 / 一年換新(保固)
-990	486		｛台達 Innergie C6 Duo 63W 萬用充電器｝USB-C*2 / 摺疊版 / PD3.0 / QC3.0 / QC4.0
-599	489		｛Gigastone 33W PD-6330W+CC-7600W｝雙孔充電器 USB(1A1C) + C-C 60W快充線
-549	490		｛Gigastone PD-7451B｝45W GaN三孔充電器 USB(1A2C) / PD3.0 / QC4+ (黑)
-699	491		｛Gigastone PD-7657B｝65W GaN三孔充電器 USB(1A2C) / PD3.0 / QC4+ (黑)
-899	492		｛Gigastone PD-7650W｝65W GaN三孔充電器 USB(1A2C) / PD3.0 / QC3.0 (白)
-1398	493		【組合優惠】｛Gigastone PD-7650W｝65W GaN三孔充電器 +｛Gigastone CC-8800W｝
-999	494		｛Gigastone PD-7100B+CC-7800B｝100W GaN四孔充電器 1A3C / 含C-C 100W快充線
-1699	495		｛Gigastone PD-130B+CC-100B｝130W GaN四孔充電器 1A3C / 含C-C 100W快充線
-2499	496		｛Gigastone PD-140B+CC-8801B｝140W GaN四孔充電器 1A3C / 含C-C 240W快充線
-1299	497		｛Gigastone WP-9330G｝23W 三合一摺疊式磁吸無線充電座
-1299	498		【組合優惠】｛Gigastone WP-9330G｝+｛Gigastone PD-7451B｝45W GaN三孔充電器
-2598	499		【兩件優惠】｛Gigastone WP-9330G｝23W 三合一摺疊式磁吸無線充電座【兩件】
-999	500		｛Gigastone WP-9340W｝20W 三合一摺疊式磁吸無線充電座
-399(原599)	501	價格異動 下殺	｛3C Pig GaN-65｝65W GaN三孔充電器 USB(1A2C) / 數位顯示 (黑)▼下殺到 11/30 23:59
+3390	493		｛ASUS ROG AC140-01｝140W GaN四孔充電器 1A3C + C to C 充電線
+2190	494		Acer 原廠 140W 氮化鎵USB電源充電器/白色 (COT-966)
+299	495		台達 45W 筆電變壓器(ADP-45VD BB) / 基本5種筆電接頭 / 一年換新(保固)
+990	496		｛台達 Innergie C6 Duo 63W 萬用充電器｝USB-C*2 / 摺疊版 / PD3.0 / QC3.0 / QC4.0
+599	499		｛Gigastone 33W PD-6330W+CC-7600W｝雙孔充電器 USB(1A1C) + C-C 60W快充線
+549	500		｛Gigastone PD-7451B｝45W GaN三孔充電器 USB(1A2C) / PD3.0 / QC4+ (黑)
+699	501		｛Gigastone PD-7657B｝65W GaN三孔充電器 USB(1A2C) / PD3.0 / QC4+ (黑)
+899	502		｛Gigastone PD-7650W｝65W GaN三孔充電器 USB(1A2C) / PD3.0 / QC3.0 (白)
+1398	503		【組合優惠】｛Gigastone PD-7650W｝65W GaN三孔充電器 +｛Gigastone CC-8800W｝
+999	504		｛Gigastone PD-7100B+CC-7800B｝100W GaN四孔充電器 1A3C / 含C-C 100W快充線
+1699	505		｛Gigastone PD-130B+CC-100B｝130W GaN四孔充電器 1A3C / 含C-C 100W快充線
+2499	506		｛Gigastone PD-140B+CC-8801B｝140W GaN四孔充電器 1A3C / 含C-C 240W快充線
+1299	507		｛Gigastone WP-9330G｝23W 三合一摺疊式磁吸無線充電座
+1299	508		【組合優惠】｛Gigastone WP-9330G｝+｛Gigastone PD-7451B｝45W GaN三孔充電器
+2598	509		【兩件優惠】｛Gigastone WP-9330G｝23W 三合一摺疊式磁吸無線充電座【兩件】
+999	510		｛Gigastone WP-9340W｝20W 三合一摺疊式磁吸無線充電座
+399(原599)	511	價格異動 下殺	｛3C Pig GaN-65｝65W GaN三孔充電器 USB(1A2C) / 數位顯示 (黑)▼下殺到 11/30 23:59
 
 ## 行動電源
-429	504		｛威剛 PC100-14BK｝黑 / 最大20W / USB(2A1C) / 三孔【10000mAh】
-599	505		｛威剛 PBC20-BK｝黑 / 最大15W / USB(2A1C) / 三孔【20000mAh】
-999	506		｛威剛 PR100-BK｝黑 / 最大20W / USB(1A1C) / 雙孔無線【10000mAh】
-599	508		｛Gigastone MP-5000ACB｝黑 / 最大15W / USB(2C) / 手錶【5000mAh】
-1198	509		【組合優惠】｛Gigastone MP-5000ACB｝黑 + Gigastone｛PD-6330W+CC-7600W｝
-1198	510		【兩件優惠】｛Gigastone MP-5000ACB｝【兩件】
-599	511		｛Gigastone MP-5000ACM｝奶茶 / 最大15W / USB(2C) / 手錶【5000mAh】
-1198	512		【組合優惠】｛Gigastone MP-5000ACM｝奶茶 + Gigastone｛PD-6330W+CC-7600W｝
-1198	513		【兩件優惠】｛Gigastone MP-5000ACM｝【兩件】
-399	514		｛Gigastone PB-7113B｝黑 / 最大20W / USB(2A1C) / 三孔【10000mAh】
-659	515		｛Gigastone QP-10200B｝最大20W / USB(1A1C) / 無線 / 兩用【10000mAh】
-1259	516		【兩件優惠】｛Gigastone QP-10200B｝【兩件】
-399	517		｛Gigastone QP-10100W｝最大20W / USB(1A1C) / Lightning輸入 無線雙孔【10000mAh】
-1299	518		｛Gigastone PD-7656W｝白 /【5000mAh】行動電源 + 65W 快充頭 + 60W磁吸快充線
+429	514		｛威剛 PC100-14BK｝黑 / 最大20W / USB(2A1C) / 三孔【10000mAh】
+599	515		｛威剛 PBC20-BK｝黑 / 最大15W / USB(2A1C) / 三孔【20000mAh】
+999	516		｛威剛 PR100-BK｝黑 / 最大20W / USB(1A1C) / 雙孔無線【10000mAh】
+599	518		｛Gigastone MP-5000ACB｝黑 / 最大15W / USB(2C) / 手錶【5000mAh】
+1198	519		【組合優惠】｛Gigastone MP-5000ACB｝黑 + Gigastone｛PD-6330W+CC-7600W｝
+1198	520		【兩件優惠】｛Gigastone MP-5000ACB｝【兩件】
+599	521		｛Gigastone MP-5000ACM｝奶茶 / 最大15W / USB(2C) / 手錶【5000mAh】
+1198	522		【組合優惠】｛Gigastone MP-5000ACM｝奶茶 + Gigastone｛PD-6330W+CC-7600W｝
+1198	523		【兩件優惠】｛Gigastone MP-5000ACM｝【兩件】
+399	524		｛Gigastone PB-7113B｝黑 / 最大20W / USB(2A1C) / 三孔【10000mAh】
+659	525		｛Gigastone QP-10200B｝最大20W / USB(1A1C) / 無線 / 兩用【10000mAh】
+1259	526		【兩件優惠】｛Gigastone QP-10200B｝【兩件】
+399	527		｛Gigastone QP-10100W｝最大20W / USB(1A1C) / Lightning輸入 無線雙孔【10000mAh】
+1299	528		｛Gigastone PD-7656W｝白 /【5000mAh】行動電源 + 65W 快充頭 + 60W磁吸快充線
