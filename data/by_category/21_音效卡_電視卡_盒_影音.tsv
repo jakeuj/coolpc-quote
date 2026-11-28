@@ -1,22 +1,23 @@
-# 21 音效卡｜電視卡(盒)｜影音  (報價日期 2026/11/27 16:09)
+# 21 音效卡｜電視卡(盒)｜影音  (報價日期 2026/11/28 13:50)
 # price	id	flags	name
 
 ## 影像擷取卡/盒/器
 490	2		｛伽利略 U3THVAC｝USB3.0 影音擷取器 / FHD60Hz / USB-A、C / HDMI輸入
-4490	3		｛圓剛 GC571｝Live Streamer Ultra HD 實況擷取卡 / 4K60Hz HDR / VRR / PCI-E
-3990	4		｛華碩TUF BOX-FHD120｝HDMI擷取盒 / FHD120Hz / USB10G / OBS認證
+4490	3	熱賣	｛圓剛 GC571｝Live Streamer Ultra HD 實況擷取卡 / 4K60Hz HDR / VRR / PCI-E
+7490	4	熱賣	｛圓剛 GC575｝Live Gamer 4K 2.1 擷取卡 / 4K144Hz HDR / VRR / HDMI2.1 / PCI-E
+3990	5	熱賣	｛華碩TUF BOX-FHD120｝HDMI擷取盒 / FHD120Hz / USB10G / OBS認證
 
 ## 直播控制台
-4990	6		｛海盜船 elgato Stream Deck MK.2｝直播控制器 / 15鍵
-5999	7		｛圓剛 NEXUS AX310｝直播控制台 / USB2.0 / 5吋觸控螢幕 / RGB / 音軌旋鈕*6
+4990	7		｛海盜船 elgato Stream Deck MK.2｝直播控制器 / 15鍵
+5999	8		｛圓剛 NEXUS AX310｝直播控制台 / USB2.0 / 5吋觸控螢幕 / RGB / 音軌旋鈕*6
 
 ## 外接音效卡
-190	9		｛伽利略 Usb51B｝ 音效卡/Usb/2.1模擬7.1/支援Win10/鋁製外殼
-390	10		｛伽利略 可調式USB2.0｝音效卡/支援高音質解析雙聲道DAC/免安裝驅動
-1090	11		｛Creative Sound Blaster Play! 3｝ USB介面 24-bit/96kHz/獨立麥克風輸入孔
-4690	12		｛Creative Sound Blaster G6｝ USB-C介面/訊噪比:130db/播放解析度32-bit/384kHz/7.1/usb埠
+190	10		｛伽利略 Usb51B｝ 音效卡/Usb/2.1模擬7.1/支援Win10/鋁製外殼
+390	11		｛伽利略 可調式USB2.0｝音效卡/支援高音質解析雙聲道DAC/免安裝驅動
+1090	12		｛Creative Sound Blaster Play! 3｝ USB介面 24-bit/96kHz/獨立麥克風輸入孔
+4690	13		｛Creative Sound Blaster G6｝ USB-C介面/訊噪比:130db/播放解析度32-bit/384kHz/7.1/usb埠
 
 ## 內接音效卡
-1990	14		｛Creative Sound Blaster Audigy Fx V2｝ 5.1音效卡/播放解析度24-bit/192kHz/120db訊噪比
-2790	15		｛Creative Sound Blaster Audigy Fx Pro｝ 7.1音效卡/播放解析度32-bit/384kHz/120db訊噪比
-6690	16	熱賣	｛Creative Sound Blaster AE-X｝音效卡/同軸輸出與光纖輸入/32-bit/384kHz/130db訊噪比
+1990	15		｛Creative Sound Blaster Audigy Fx V2｝ 5.1音效卡/播放解析度24-bit/192kHz/120db訊噪比
+2790	16		｛Creative Sound Blaster Audigy Fx Pro｝ 7.1音效卡/播放解析度32-bit/384kHz/120db訊噪比
+6690	17	熱賣	｛Creative Sound Blaster AE-X｝音效卡/同軸輸出與光纖輸入/32-bit/384kHz/130db訊噪比
